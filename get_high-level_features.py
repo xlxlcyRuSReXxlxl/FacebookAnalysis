@@ -5,7 +5,7 @@
 #' @name yolov2_vgg16_place365
 #' @details get infos about comments of the photos of a profile.
 #' @export 
-#' @author Livio Finos, Ciro Lista
+#' @author Ciro Lista
 #' @param string
 #' @return a dataframe with n rows, one for each photo with the following values: 
 #'  #'   "ImagePath"        "vgg16lab"     "ObjectsDetected"  "BlurIndex"   "Scene"   "IndooroOutdoor"
