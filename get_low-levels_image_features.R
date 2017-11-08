@@ -1,11 +1,3 @@
-#loading packages
-
-require(EBImage)
-require(magick)
-require(pixmap)
-require(imager)
-require(imagedata)
-
 ########################################################
 
 #' @name orientation_index
@@ -14,6 +6,18 @@ require(imagedata)
 #' @author Ciro Lista
 #' @param img_coord 
 #' @return gives back the orientation of a given photo
+
+
+
+#loading packages
+
+require(EBImage)
+require(magick)
+require(pixmap)
+require(imager)
+require(imagedata)
+
+#####################
 
 img_orientation<-function(img_coor){
   orientation<-"Square"
@@ -25,20 +29,10 @@ img_orientation<-function(img_coor){
 #########################################################
 
 #' @name dv_tot_grayScale
-#' @details get infos about comments of the photos of a profile.
+#' @details # it provides variability index using standard deviation, togheter with the image dimension and orientation
 #' @export 
-#' @author Livio Finos, Ciro Lista
-#' @param user_path path of the user 
-#' @return \code{data.frame} with n rows, one for each photo with the following values: 
-#'  #'   "userID"            "album"             "photo_id"        
-#'    "n_commenti_totali" "n_commenti_user"   "comm_dates"
-#'    the column "comm_dates" contains the pasted texts of the got comments from a given photo
+#' @param path
 
-
-
-
-
-# it provides variability index using standard deviation, togheter with the image dimension and orientation
 dv_tot_grayScale<-function(path){
   library(magick)
   library(pixmap)
